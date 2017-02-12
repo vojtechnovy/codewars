@@ -1,0 +1,11 @@
+My Solution:
+def nb_dig(n, d):
+    s = range(0,n+1)
+    ans = ''
+    for i in s:
+        ans += str(int(i)**2)
+return ans.count(str(d))
+
+Best Solution:
+def nb_dig(n, d):
+return ''.join(str(a ** 2) for a in xrange(n + 1)).count(str(d))
