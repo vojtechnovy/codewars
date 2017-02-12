@@ -1,0 +1,18 @@
+
+My:
+def nb_year(p0, percent, aug, p):
+    pop = p0
+    nb_year = 0
+    while True:
+        pop = (pop + pop * percent * 0.01 + aug)
+        nb_year = nb_year + 1
+        if pop >= p:
+            return nb_year
+            
+Best:        
+ def nb_year (population, percent, aug, target):
+    year = 0
+    while population < target:
+        population += population * percent / 100. + aug
+        year += 1
+return year
